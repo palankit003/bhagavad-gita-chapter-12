@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sa" data-theme="dark" data-caret="line">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>श्रीमद्भगवद्गीता — द्वादशोऽध्यायः (भक्तियोगः) | Bhagavad Gita Chapter 12</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">ॐ</div>
+        <div class="brand-title">
+          <h1>श्रीमद्भगवद्गीता <span class="badge-tag">अध्याय १२</span></h1>
+          <p>भक्तियोगः — The Yoga of Devotion (All 20 Shlokas with Audio & Monkeytype Animation)</p>
+        </div>
+      </div>
+
+      <!-- Controls & Preferences -->
+      <div class="header-controls">
+        <select class="select-control" id="global-track-select" title="Choose Audio Recording Source">
+          <option value="sanskrit">🎵 Sanskrit Chanting (Music)</option>
+          <option value="recit">🎙️ Clean Vedic Recitation</option>
+          <option value="full">📖 Full Discourse & Meaning (Music)</option>
+        </select>
+
+        <select class="select-control" id="theme-select" title="Color Theme & Highlight Accent">
+          <option value="dark">🌙 Golden Amber</option>
+          <option value="emerald">🌲 Vedic Emerald</option>
+          <option value="sapphire">🌊 Deep Sapphire</option>
+          <option value="parchment">📜 Serene Parchment</option>
+        </select>
+
+        <button class="btn-control" id="btn-auto-advance" title="Automatically advance to next verse when audio finishes">
+          ⏩ Auto-Advance: OFF
+        </button>
+
+        <button class="btn-control" id="btn-play-all" title="Start playback from Shloka 1">
+          ▶ Play All
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar: Shloka Jump Pills & Search -->
+  <div class="nav-bar-container">
+    <div class="nav-bar-inner">
+      <div class="shloka-jump-list" id="jump-list">
+        <!-- Generated dynamically 1 to 20 -->
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="search-input" placeholder="Search shloka by number or Sanskrit text...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Sticky Mini Player Banner -->
+  <div class="global-player-banner" id="global-player-banner">
+    <div class="global-player-inner">
+      <div class="global-player-info">
+        <span class="now-playing-badge">PLAYING</span>
+        <span class="now-playing-title" id="global-now-playing-title">श्लोक १२.१</span>
+      </div>
+      <div class="global-player-controls">
+        <span style="font-size: 0.8rem; color: var(--unrecited-color);">Shortcuts: Space (Pause), ← / → (±5s), J (Prev), K (Next)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sacred Hero Intro Card -->
+    <section class="hero-card">
+      <div class="hero-subtitle">॥ श्रीपरमात्मने नमः ॥</div>
+      <h2 class="hero-title">द्वादशोऽध्यायः — भक्तियोगः</h2>
+      <div class="hero-english">Chapter 12 — Bhakti Yoga (The Path of Devotion)</div>
+      <div class="hero-badges">
+        <div class="hero-badge">🕉️ सम्पूर्ण २० श्लोक (All 20 Shlokas)</div>
+        <div class="hero-badge">🎧 Audio Extracted from Music Library</div>
+        <div class="hero-badge">✨ Colored Recitation Overlay</div>
+      </div>
+    </section>
+
+    <!-- Shlokas Container -->
+    <div id="shlokas-container">
+      <!-- 20 Shloka Cards rendered here by app.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div style="font-family: var(--font-sanskrit); font-size: 1.1rem; color: var(--main-color); margin-bottom: 8px;">
+      ॥ ॐ तत्सदिति श्रीमद्भगवद्गीतासूपनिषत्सु ब्रह्मविद्यायां योगशास्त्रे श्रीकृष्णार्जुनसंवादे भक्तियोगो नाम द्वादशोऽध्यायः ॥
+    </div>
+    <p>Bhagavad Gita Chapter 12 Web Application • Crafted with Monkeytype aesthetics and synced sacred audio</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="gita_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
